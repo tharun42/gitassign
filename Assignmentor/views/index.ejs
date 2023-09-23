@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+        <title>Assigmentor</title>
+        <link rel="icon" href="/images/titleimg2.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script type="text/javascript" defer src="/javascript/s1.js"></script>
+    </head>
+    <body>
+           <h1>Your tasks</h1>
+        <div id="addtaskmenu">
+            <form>
+            <input type="text" id="name" name="name" oninput="increaseWidth(this)" placeholder="task">
+            <br><br>
+            <input type="date"  id="date" name="remainderAt">
+            <br><br>
+            <input type="time" id="time" name="remainderAt">
+            <button id="done" onclick="DONe()">Done</button>
+        </form>
+        </div>
+        <ol class="tasks_ol">
+         tasks
+        </ol>
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <a href="/search"><i class="fa fa-search"></i></a>
+  <a href="/about"><i class="fa fa-envelope"></i></a>
+  <a href="/map"><i class="fa fa-globe"></i></a>
+  <a href="/trash"><i class="fa fa-trash"></i></a>
+  <a class="plus" id="/plus" onclick="show()"><i class="fa fa-plus"></i></a>
+</div>
+
+    </body>
+</html>

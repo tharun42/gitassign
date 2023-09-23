@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("/images/space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+ }
+ h1{
+   color: antiquewhite;
+   text-align: center;
+   font-size: 2em;
+ }
+ nav {
+     font-size: 14px;
+     font-family: georgia;
+     text-align: center;
+ }
+ div {
+     width: 200 px;
+     border: solid 1px;
+     float: left;
+     padding: 10px 0;
+     margin: 10px 0;
+     position: fixed;
+ }
+ .icon-bar {
+     width: 70px; /* Set a specific width */
+     background-color: #555; /* Dark-grey background */
+     top: 50px;
+   }
+   
+   .icon-bar a {
+     display: block; /* Make the links appear below each other instead of side-by-side */
+     text-align: center; /* Center-align text */
+     padding: 16px; /* Add some padding */
+     transition: all 0.3s ease; /* Add transition for hover effects */
+     color: white; /* White text color */
+     font-size: 36px; /* Increased font-size */
+   }
+   
+   .icon-bar a:hover {
+     background-color: #000; /* Add a hover color */
+   }
+   
+   .active {
+     background-color: #04AA6D; /* Add an active/current color */
+   }
+   .plus{
+     background-color: red;
+     position: fixed;
+     right: 30px;
+     bottom: 30px;
+   }
+   .navbar{
+     display:flex;
+     width:100vw;
+     height: 50px;
+     color:white;
+   }
+   input{
+     width: 30ch;
+   }
+  
+   .task{
+     background-color: antiquewhite;
+     color: black;
+     position: relative;
+     margin-left: 100px;
+     width: auto;
+    font-size: larger;
+    padding: 10px;
+   }
+   #addtaskmenu{
+    /* width: 300px;
+    height: 300px; */
+    display: none;
+    padding:20px ;
+    right: 100px;
+    bottom: 100px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: bisque;
+  }

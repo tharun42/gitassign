@@ -1,0 +1,23 @@
+<div class="purpose">
+    <h1 class="purpose_heading">Hey! Your tasks</h1>
+</div>
+
+  </div>
+<img src="/images/moon.jpg" alt="Nature" class="hero-image" width="981" height="528">
+<section class="articles">
+    <h2 class="articles_heading">Latest tasks</h2>
+    <ol class="articles_ul">
+        <% data.forEach(post => { %>
+        <li><a href="#">
+            <span id="s1"><%=post.title %></span>
+            <span class="artcles-list_date" id="s2"><%= post.createdAt.toDateString() %></span>
+        </a></li>
+        <% }) %>
+    </ol>
+    <% if (nextPage!=null) { %>
+        <a href="/?page=<%= nextPage %>" class="pagination">
+            &lt;view older taks
+        </a>
+    <% } %>
+ 
+</section>
